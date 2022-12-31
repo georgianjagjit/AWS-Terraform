@@ -1,4 +1,4 @@
-terraform{
+terraform {
     required_version = ">=0.12"    
     required_providers {
       aws = {
@@ -25,4 +25,8 @@ resource "aws_lambda_function" "mypython_lambda" {
   runtime = "python3.8"
 }
 
-//test
+resource "aws_iam_role" "mypython_lambda_role" {
+  name = "mypython_role"
+
+  
+}
