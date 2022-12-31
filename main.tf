@@ -25,3 +25,4 @@ resource "aws_lambda_function" "mypython_lambda" {
   runtime = "python3.8"
 }
 
+//test
